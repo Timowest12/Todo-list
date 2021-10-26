@@ -1,6 +1,53 @@
 body {
-  background-color: bisque;
+  margin: 0;
+  padding: 0;
 }
-.hello {
-    color: red;
-  }
+
+ul {
+  padding: 0;
+}
+
+.todowrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  background-color: rgb(247, 247, 247);
+  display: inline-block;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  min-width: 250px;
+}
+
+.todolist {
+  margin: 0;
+}
+
+.todolist > li {
+  list-style-type: none;
+  border: 1px solid rgba(204, 203, 203, 0.664);
+  padding: 5px;
+}
+
+.listinp {
+  width: 100%;
+  /* stylelint-disable */
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+  /* stylelint-enable */
+  height: 100%;
+  padding: 5px;
+}
+
+li.inpwrapper {
+  padding: 0;
+}
+
+.bottombar {
+  text-align: center;
+  padding: 15px;
+  background-color: rgb(184, 179, 179);
+}
