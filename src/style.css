@@ -31,6 +31,28 @@ ul {
   padding: 5px;
 }
 
+.tasksoutput > li {
+  list-style-type: none;
+  border: 1px solid rgba(204, 203, 203, 0.664);
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.optionicon {
+  margin-left: auto;
+}
+
+.tasktxt {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.material-icons-outlined {
+  font-family: 'Font Name', serif;
+}
+
 .listinp {
   width: 100%;
   /* stylelint-disable */

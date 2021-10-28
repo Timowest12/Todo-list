@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     print: './src/print.js',
+    addandremove: './src/addandremove.js',
   },
   devServer: {
     static: './dist',
