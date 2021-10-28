@@ -40,7 +40,6 @@ function outputlist() {
       range.collapse(false);
       selection.addRange(range);
       txttowriteto.focus();
-      
     });
   });
   checkboxupdate();
