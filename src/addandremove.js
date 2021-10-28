@@ -95,20 +95,22 @@ function deletebtn() {
 }
 
 function removefromlist() {
-  const tasks = [];
-  const storedtodos = JSON.parse(localStorage.getItem('todos'));
-  storedtodos.forEach((item) => {
-    tasks.push(item);
-  });
-  const checkedBoxes = document.querySelectorAll(
+  let storedtodos = JSON.parse(localStorage.getItem('todos'));
+  storedtodos = storedtodos.filter((todo) => todo.done !== true);
+  localStorage.setItem('todos', JSON.stringify(storedtodos));
+  outputlist();
+  /*  const checkedBoxes = document.querySelectorAll(
     'input[name=mycheckboxes]:checked',
   );
+  //alert(checkedBoxes.length);
   checkedBoxes.forEach((value) => {
+      //alert(value.value)
     tasks.splice(value.value, 1);
+    localStorage.setItem('todos', JSON.stringify(tasks));
   });
   // tasks.splice(0,1);
-  localStorage.setItem('todos', JSON.stringify(tasks));
   outputlist();
+} */
 }
 
 bottombar.addEventListener('click', removefromlist);
