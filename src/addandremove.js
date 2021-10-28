@@ -71,7 +71,7 @@ function outputlist() {
     });
   }
   tasks.forEach((item, index) => {
-    tasksoutput.innerHTML += `<li data-ind='${index}' contentEditable='false' class='lstitem'><input ='checkbox' ${item.done ? true : 'checked'} name=mycheckboxes type='checkbox' value='${index}'> <span class='tasktxt'>${item.item}</span><span class='optionicon'><i class='material-icons'>more_vert</i></span></li>`;
+    tasksoutput.innerHTML += `<li data-ind='${index}' contentEditable='false' class='lstitem'><input ='checkbox' ${item.done == true ? 'checked' : 'unchecked'} name=mycheckboxes type='checkbox' value='${index}'> <span class='tasktxt'>${item.item}</span><span class='optionicon'><i class='material-icons'>more_vert</i></span></li>`;
     txtenter();
   });
 
