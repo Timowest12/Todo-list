@@ -30,6 +30,7 @@ ul {
   border: 1px solid rgba(204, 203, 203, 0.664);
   padding: 5px;
 }
+
 .tasksoutput > li {
   list-style-type: none;
   border: 1px solid rgba(204, 203, 203, 0.664);
@@ -38,16 +39,19 @@ ul {
   flex-direction: row;
   align-items: center;
 }
-.optionicon{
+
+.optionicon {
   margin-left: auto;
 }
-.tasktxt{
+
+.tasktxt {
   overflow: hidden;
-    white-space: nowrap;
+  white-space: nowrap;
 }
+
 .material-icons-outlined {
   font-family: 'Font Name', serif;
-  }
+}
 
 .listinp {
   width: 100%;
