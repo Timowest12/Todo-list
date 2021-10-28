@@ -10,3 +10,11 @@ const outputlist = listobj.forEach((task) => {
   listoutput.innerHTML += `<li class='lstitem'><input type='checkbox' value='${task.index}'> ${task.description}</li>`;
 });
 outputlist();
+
+
+const input = document.getElementById("lintinput");
+
+
+input.addEventListener("keyup", function(event) {
+  alert('yoo');
+});
