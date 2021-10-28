@@ -8,10 +8,6 @@ function checkboxupdate() {
     });
   });
 }
-
-if (localStorage.getItem('todos') != null) {
-  // alert('set');
-}
 const inp = document.querySelector('.listinp');
 const tasksoutput = document.querySelector('.tasksoutput');
 const bottombar = document.querySelector('.bottombar');
@@ -30,7 +26,6 @@ function outputlist() {
     txtenter();// eslint-disable-line
   });
 
-  // add event listeners to option buttons
   document.querySelectorAll('.optionicon').forEach((item) => {
     item.addEventListener('click', () => {
       item.innerHTML = "<i class='deletebtn material-icons'>delete</i>";
@@ -45,7 +40,7 @@ function outputlist() {
       range.collapse(false);
       selection.addRange(range);
       txttowriteto.focus();
-      // document.body.style.cursor = item.parentElement.querySelector('.tasktxt');
+      
     });
   });
   checkboxupdate();
@@ -76,7 +71,6 @@ function txtenter() {
       tasktxt.setAttribute('contentEditable', 'false');
       outputlist();
     }
-    // alert(tasktxt.parentElement.dataset.ind)
     const storedtodos = JSON.parse(localStorage.getItem('todos'));
     storedtodos[tasktxt.parentElement.dataset.ind].item = tasktxt.innerHTML;
     localStorage.setItem('todos', JSON.stringify(storedtodos));
@@ -99,18 +93,6 @@ function removefromlist() {
   storedtodos = storedtodos.filter((todo) => todo.done !== true);
   localStorage.setItem('todos', JSON.stringify(storedtodos));
   outputlist();
-  /*  const checkedBoxes = document.querySelectorAll(
-    'input[name=mycheckboxes]:checked',
-  );
-  //alert(checkedBoxes.length);
-  checkedBoxes.forEach((value) => {
-      //alert(value.value)
-    tasks.splice(value.value, 1);
-    localStorage.setItem('todos', JSON.stringify(tasks));
-  });
-  // tasks.splice(0,1);
-  outputlist();
-} */
 }
 
 bottombar.addEventListener('click', removefromlist);
