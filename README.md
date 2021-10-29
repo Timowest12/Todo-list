@@ -20,7 +20,7 @@ I used flexbox webpack and offcoure html,css,html
 
 ## Live Demo
 
-[Live Demo Link](https://timowest12.github.io/Todo-list/)
+[Live Demo Link](https://timowest12.github.io/Todo-list/dist/)
 
 ## Getting Started
 
