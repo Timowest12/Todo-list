@@ -4,7 +4,8 @@
 
 > Todo list with webpack
 
-![screenshot](./app_screenshot.png)
+<img width="186" alt="2021-11-03" src="https://user-images.githubusercontent.com/13661892/140024794-762e17e9-4d44-4f5b-a1a9-a39872c01d7f.png">
+<img width="187" alt="2021-11-03 (1)" src="https://user-images.githubusercontent.com/13661892/140024776-a36547aa-98b1-418e-ac3a-3e19f6ee853d.png">
 
 This is the todo list that I made as a training exercise to create a project page using webpack as overall structure
 This 
